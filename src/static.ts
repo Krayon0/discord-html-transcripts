@@ -54,7 +54,6 @@ export const timestampShort: Intl.DateTimeFormatOptions = {
 };
 
 export const timestampLong: Intl.DateTimeFormatOptions = {
-    weekday: 'long',
     year: 'numeric',
     month: 'long',
     day: 'numeric',
