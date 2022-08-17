@@ -214,7 +214,7 @@ async function generateTranscript<T extends ReturnTypes>(
             timestamp.setAttribute('data-timestamp', message.createdTimestamp.toString());
             timestamp.textContent = message.createdAt.toLocaleString(
                 'en-us',
-                staticTypes.timestampShort
+                staticTypes.timestampLong
             );
             timestamp.title = he.escape(
                 message.createdAt.toLocaleTimeString(
