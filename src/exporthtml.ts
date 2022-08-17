@@ -18,7 +18,7 @@ import {
 } from './types';
 
 import { downloadImageToDataURL } from './utils';
-const template = fs.readFileSync(path.join(__dirname, 'template.html'), 'utf8').replace('{{staticTypes.timestampShort}}', JSON.stringify(staticTypes.timestampShort));
+const template = fs.readFileSync(path.join(__dirname, 'template.html'), 'utf8').replace('{{staticTypes.timestampLong}}', JSON.stringify(staticTypes.timestampLong));
 
 const version = require('../package.json').version;
 const isDJSv14 = userDiscord.version.startsWith('14');
