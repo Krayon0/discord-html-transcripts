@@ -768,7 +768,7 @@
     </script>
 
     <script>
-        const timestampShortStyle = JSON.parse(`{{staticTypes.timestampShort}}`); 
+        const timestampLongStyle = JSON.parse(`{{staticTypes.timestampLong}}`); 
 
         document.addEventListener('DOMContentLoaded', (event) => {
 
@@ -837,7 +837,7 @@
             document.querySelectorAll('.chatlog__timestamp').forEach(function (element) {
                 try {
                     let date = new Date(parseInt(element.getAttribute('data-timestamp')));
-                    element.textContent = date.toLocaleString(undefined, timestampShortStyle);
+                    element.textContent = date.toLocaleString(undefined, timestampLongStyle);
                 } catch (error) {
                     console.log(error);
                 }
